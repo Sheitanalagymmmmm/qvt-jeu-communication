@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Le Pont de la Communication</title>
   <style>
     body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #002855; /* texte principal en bleu foncé */
-  margin: 0;
-  padding: 0;
-}
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #002855;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
-  background-color: #002855; /* bleu marine */
-  color: white;
-  padding: 2em 1em;
-  text-align: center;
-}
+    header {
+      background-color: #002855;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
 
-nav {
-  background-color: #EAAA00; /* jaune */
-  padding: 1em;
-  text-align: center;
-}
+    nav {
+      background-color: #EAAA00;
+      padding: 1em;
+      text-align: center;
+    }
 
-nav a {
-  margin: 0 1.2em;
-  color: #002855; /* texte bleu foncé */
-  text-decoration: none;
-  font-weight: bold;
-}
+    nav a {
+      margin: 0 1.2em;
+      color: #002855;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-h2 {
-  color: #002855;
-  border-bottom: 2px solid #EAAA00;
-  padding-bottom: 0.3em;
-}
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em 1.5em;
+    }
 
-blockquote {
-  border-left: 4px solid #EAAA00;
-  background-color: #FFF5D9; /* jaune très clair */
-  color: #002855;
-}
+    section {
+      margin-bottom: 2.5em;
+    }
 
-.download-link {
-  background-color: #002855;
-  color: white;
-}
+    h2 {
+      color: #002855;
+      border-bottom: 2px solid #EAAA00;
+      padding-bottom: 0.3em;
+    }
 
-footer {
-  background-color: #EAAA00;
-  color: #002855;
-}
+    ul {
+      margin-top: 0.5em;
+      padding-left: 1.2em;
+    }
 
+    blockquote {
+      border-left: 4px solid #EAAA00;
+      padding-left: 1em;
+      margin: 1.5em 0;
+      background-color: #FFF5D9;
+      font-style: italic;
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background-color: #002855;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    .grid-plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+    }
+
+    .plan-item {
+      text-align: center;
+    }
+
+    .plan-item img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #EAAA00;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #EAAA00;
+      color: #002855;
+      padding: 1.2em;
+      margin-top: 2em;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
@@ -128,23 +171,32 @@ footer {
       <h2>Plans de construction</h2>
       <p>Visualisez ou téléchargez les différents plans ci-dessous :</p>
 
-      <img class="plan" src="1000022394.jpg" alt="Plan 1">
-      <a class="download-link" href="1000022394.jpg" download>Télécharger le plan 1</a>
-
-      <img class="plan" src="1000022395.jpg" alt="Plan 2">
-      <a class="download-link" href="1000022395.jpg" download>Télécharger le plan 2</a>
-
-      <img class="plan" src="1000022396.jpg" alt="Plan 3">
-      <a class="download-link" href="1000022396.jpg" download>Télécharger le plan 3</a>
-
-      <img class="plan" src="1000022397.jpg" alt="Plan 4">
-      <a class="download-link" href="1000022397.jpg" download>Télécharger le plan 4</a>
-
-      <img class="plan" src="1000022398.jpg" alt="Plan 5">
-      <a class="download-link" href="1000022398.jpg" download>Télécharger le plan 5</a>
-
-      <img class="plan" src="1000022399.jpg" alt="Plan 6">
-      <a class="download-link" href="1000022399.jpg" download>Télécharger le plan 6</a>
+      <div class="grid-plans">
+        <div class="plan-item">
+          <img src="1000022394.jpg" alt="Plan 1">
+          <a class="download-link" href="1000022394.jpg" download>Télécharger Plan 1</a>
+        </div>
+        <div class="plan-item">
+          <img src="1000022395.jpg" alt="Plan 2">
+          <a class="download-link" href="1000022395.jpg" download>Télécharger Plan 2</a>
+        </div>
+        <div class="plan-item">
+          <img src="1000022396.jpg" alt="Plan 3">
+          <a class="download-link" href="1000022396.jpg" download>Télécharger Plan 3</a>
+        </div>
+        <div class="plan-item">
+          <img src="1000022397.jpg" alt="Plan 4">
+          <a class="download-link" href="1000022397.jpg" download>Télécharger Plan 4</a>
+        </div>
+        <div class="plan-item">
+          <img src="1000022398.jpg" alt="Plan 5">
+          <a class="download-link" href="1000022398.jpg" download>Télécharger Plan 5</a>
+        </div>
+        <div class="plan-item">
+          <img src="1000022399.jpg" alt="Plan 6">
+          <a class="download-link" href="1000022399.jpg" download>Télécharger Plan 6</a>
+        </div>
+      </div>
     </section>
   </main>
 
